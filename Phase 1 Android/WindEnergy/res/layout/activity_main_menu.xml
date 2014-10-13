@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="horizontal"
+    android:background="@color/white">
+	    
+    
+   	<LinearLayout android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:id="@+id/main_menu_rl_title"
+       android:layout_weight="2"
+       android:orientation="vertical"
+       android:padding="10dp">
+       
+		<ImageView android:layout_width="fill_parent"
+       		android:layout_height="0dp"
+        	android:src="@drawable/logo_splashcreen"
+            android:layout_weight="7"/>
+		<TextView android:layout_width="wrap_content"
+        	android:layout_height="0dp"
+        	android:text="@string/wind"
+        	android:id="@+id/main_menu_tv_title"
+        	android:textSize="70sp"
+       		android:layout_weight="5"
+       		android:layout_gravity="center_horizontal"
+        />
+   </LinearLayout>
+    
+   <LinearLayout 
+    	android:layout_width="wrap_content"
+    	android:layout_height="match_parent" 
+		android:layout_weight="1"
+    	android:orientation="vertical"
+   		android:id="@+id/main_menu_ll_buttons"
+    	android:padding="15dp">
+	    
+	    <Button android:layout_width="match_parent"
+	     	android:layout_height="0dp"
+	       	android:layout_weight="0.1"
+	       	android:id="@+id/main_menu_btn_start"
+	       	android:contentDescription="@string/start_button_desc"
+	       	android:text="@string/start"
+	       	android:onClick="onClickStart"
+	       	android:textSize="20sp"/>
+	    	    
+	    <Button android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	       	android:layout_weight="0.1"
+	        android:id="@+id/main_menu_btn_activity"
+	        android:contentDescription="@string/activity_button_desc"
+	        android:text="@string/activity"
+	        android:onClick="onClickActivity"
+	        android:textSize="20sp"/>
+	    
+	    
+	    <Button android:layout_width="match_parent"
+	       	android:layout_height="0dp"
+	       	android:layout_weight="0.1"
+	       	android:id="@+id/main_menu_btn_concept"
+	       	android:contentDescription="@string/concept_button_desc"
+	       	android:text="@string/concept"
+	       	android:onClick="onClickConcept"
+	       	android:textSize="20sp"/>
+	    
+	    
+	    <Button android:layout_width="match_parent"
+	       	android:layout_height="0dp"
+	       	android:layout_weight="0.1"
+	       	android:id="@+id/main_menu_btn_info"
+	       	android:contentDescription="@string/info_button_desc"
+	       	android:text="@string/information"
+	       	android:onClick="onClickInformation"
+	       	android:textSize="20sp"/>
+	    
+	    
+	    <Button android:layout_width="match_parent"
+	       	android:layout_height="0dp"
+	       	android:layout_weight="0.1"  
+	     	android:id="@+id/main_menu_btn_exit"
+	        android:contentDescription="@string/exit_button_desc"
+	        android:text="@string/exit"
+	        android:onClick="onClickExit"
+	        android:textSize="20sp"/>
+	</LinearLayout>
+    
+</LinearLayout>

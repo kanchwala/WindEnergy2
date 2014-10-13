@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inspiration_title"
+        android:id="@+id/info_tv_inspiration_title"
+       	android:paddingTop="30sp"
+        android:paddingLeft="30sp"
+        android:paddingBottom="10sp"
+        android:textSize="20sp"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_tv_inspiration"
+        android:text="@string/inspiration"
+        android:paddingBottom="30sp"
+        android:paddingLeft="30sp"
+        android:layout_below="@+id/info_tv_inspiration_title"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/journey_title"
+        android:id="@+id/info_tv_journey_title"
+       	android:paddingTop="30sp"
+        android:paddingLeft="30sp"
+        android:paddingBottom="10sp"
+        android:textSize="20sp"
+        android:layout_below="@+id/info_tv_inspiration"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_tv_journey"
+        android:text="@string/journey"
+        android:layout_below="@+id/info_tv_journey_title"
+        android:paddingBottom="30sp"
+        android:paddingLeft="30sp"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/goal_title"
+        android:id="@+id/info_tv_goal_title"
+       	android:paddingTop="30sp"
+        android:paddingLeft="30sp"
+        android:paddingBottom="10sp"
+        android:textSize="20sp"
+        android:layout_below="@+id/info_tv_journey"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info_tv_goal"
+        android:text="@string/goal"
+        android:layout_below="@+id/info_tv_goal_title"
+        android:paddingBottom="30sp"
+        android:paddingLeft="30sp"/>
+	</RelativeLayout>
+</ScrollView>
